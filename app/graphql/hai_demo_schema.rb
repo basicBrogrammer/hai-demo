@@ -1,4 +1,7 @@
 class HaiDemoSchema < GraphQL::Schema
+  include Hai::GraphQL::Types
+  hai_types(User, Post)
+
   mutation(Types::MutationType)
   query(Types::QueryType)
 
