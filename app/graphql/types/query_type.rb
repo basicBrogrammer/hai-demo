@@ -5,6 +5,6 @@ module Types
     include GraphQL::Types::Relay::HasNodesField
 
     include Hai::GraphQL
-    hai_query(User)
+    hai_query(User, Post)
   end
 end
